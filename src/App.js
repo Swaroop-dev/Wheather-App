@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { search,searchCity } from "./Components/apiCalls";
 
 function App() {
+  const [data, setData] = useState([]);
+  const [list, setlist] = useState([]);
+
+  function handleChange(e) {
+    setData(e.target.value);
+  }
+  function handleSubmit(dat) {
+    search(dat).then((d) => setlist(d));
+  }
+  // function handleCity(city) {
+  //   searchCity(city).then()
+  // }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input type="text" value={data} onChange={(e) => handleChange(e)} />
+      <button onClick={() => handleSubmit(data)}>search</button>
+      <div>
+        {list !== undefined &&
+          list.map((l, index) => (
+            <h4 key={index} onClick={() => handleCity(data[index].title)}>
+              {l.title}
+            </h4>
+          ))}
+      </div>
     </div>
   );
 }
