@@ -44,3 +44,8 @@
   width: 150%;
   height: 100%;
 }
+
+.Imgtag {
+  background-image: url(./images/map\ image.svg);
+  background-size: cover;
+}

@@ -9,7 +9,12 @@ const CityComponent = ({ name, details, key1, id }) => {
         <h3>{name}</h3>
 
         <button className="Button">
-          <Link to={`/detail/${id}`}>details</Link>
+          <Link
+            to={`/detail/${id}`}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            details{" "}
+          </Link>
         </button>
       </div>
     </div>
