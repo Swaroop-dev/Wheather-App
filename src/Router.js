@@ -8,12 +8,8 @@ export default function RouterComponent() {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/">
-            <App />
-          </Route>
-          <Route exact path="/detail/:id">
-            <WheatherDetail />
-          </Route>
+          <Route path="/" exact component={App} />
+          <Route path="/detail/:id" exact component={WheatherDetail} />
         </Switch>
       </div>
     </Router>

@@ -11,6 +11,5 @@ export const search = async (word) => {
 export const searchCity = async (woeid) => {
   console.log(woeid);
   let url = API1 +woeid; 
-  console.log(url);
   return fetch(url).then((res) => res.json());
 };
