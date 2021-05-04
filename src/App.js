@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { search, searchCity } from "./Components/apiCalls";
+import logo from './material-icon-2155442_960_720.png'
 
 function App() {
   const [data, setData] = useState([]);
@@ -23,9 +24,19 @@ function App() {
     console.log(Detail);
   }
   return (
-    <div className="App">
-      <input type="text" value={data} onChange={(e) => handleChange(e)} />
-      <button onClick={() => handleSubmit(data)}>search</button>
+    <div className="wrap">
+      <div className="search">
+        <input
+          type="text"
+          value={data}
+          onChange={(e) => handleChange(e)}
+          class="searchTerm"
+          placeholder="What are you looking for?"
+        />
+        <button onClick={() => handleSubmit(data)} className="searchButton">
+          <img src={ logo} className="Image"></img>
+        </button>
+      </div>
       <div>
         {list !== undefined &&
           list.map((l, index) => (
@@ -34,8 +45,6 @@ function App() {
             </h4>
           ))}
       </div>
-      {Detail !== undefined &&
-        Detail.map((d) => <h2>{d.weather_state_name}</h2>)}
     </div>
   );
 }
