@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/%7BWheather-App%7D/static/css/main.d80797c3.chunk.css",
+    "main.js": "/%7BWheather-App%7D/static/js/main.16e506a0.chunk.js",
+    "main.js.map": "/%7BWheather-App%7D/static/js/main.16e506a0.chunk.js.map",
+    "runtime-main.js": "/%7BWheather-App%7D/static/js/runtime-main.b45e7b6c.js",
+    "runtime-main.js.map": "/%7BWheather-App%7D/static/js/runtime-main.b45e7b6c.js.map",
+    "static/js/2.7608b8bb.chunk.js": "/%7BWheather-App%7D/static/js/2.7608b8bb.chunk.js",
+    "static/js/2.7608b8bb.chunk.js.map": "/%7BWheather-App%7D/static/js/2.7608b8bb.chunk.js.map",
+    "static/js/3.c567847a.chunk.js": "/%7BWheather-App%7D/static/js/3.c567847a.chunk.js",
+    "static/js/3.c567847a.chunk.js.map": "/%7BWheather-App%7D/static/js/3.c567847a.chunk.js.map",
+    "index.html": "/%7BWheather-App%7D/index.html",
+    "static/css/main.d80797c3.chunk.css.map": "/%7BWheather-App%7D/static/css/main.d80797c3.chunk.css.map",
+    "static/js/2.7608b8bb.chunk.js.LICENSE.txt": "/%7BWheather-App%7D/static/js/2.7608b8bb.chunk.js.LICENSE.txt",
+    "static/media/light cloud.319ab607.png": "/%7BWheather-App%7D/static/media/light cloud.319ab607.png",
+    "static/media/App.css": "/%7BWheather-App%7D/static/media/map image.12e67072.svg",
+    "static/media/material-icon-2155442_960_720.cfc97b06.png": "/%7BWheather-App%7D/static/media/material-icon-2155442_960_720.cfc97b06.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b45e7b6c.js",
+    "static/js/2.7608b8bb.chunk.js",
+    "static/css/main.d80797c3.chunk.css",
+    "static/js/main.16e506a0.chunk.js"
+  ]
+}
